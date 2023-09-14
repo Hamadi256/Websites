@@ -1,0 +1,67 @@
+body {
+    background-color:whitesmoke;
+    margin:0px;
+}
+
+#stickyHead {
+    position:sticky;
+    top:0px;
+    background-color:rgb(0, 149, 255);
+    width:100vw;
+    text-align: right;
+}
+
+.buttonHead {
+    height:70px;
+    width:100px;
+    margin-right:20%;
+    background-color: rgb(0, 149, 255);
+    border:none;
+    font-size:xx-large;
+}
+
+.buttonHead:hover {
+    background-color:rgb(8, 138, 240);
+    cursor:pointer;
+}
+
+#time {
+    font-family: "DS-Digital", sans-serif;
+    font-size:1000%;
+    margin-left:5%;
+    margin-top:10%;
+    margin-bottom:1%;
+}
+
+#addTime {
+    width:100vw;
+    height:21vw;
+    background-color:cadetblue;
+}
+
+.timeButton {
+    width:24.8%;
+    height:100%;
+    background-color:cadetblue;
+    border:none;
+}
+
+.timeButton:hover {
+    background-color:rgb(88, 141, 143);
+    cursor:pointer;
+}
+
+#P1D {
+    font-size:700%;
+}
+#P1H {
+    font-size:700%;
+}
+#P1M {
+    font-size:700%;
+}
+#P1S {
+    font-size:700%;
+}
+
+

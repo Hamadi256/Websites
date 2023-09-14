@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+:root {
+    --blue: #203354;
+}
+
+body {
+    background-color: var(--blue);
+    display: flex;
+    width:97vw;
+    height:100vh;
+    margin:0;
+    padding:0;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width:600px;
+    height:auto;
+}
+
+header p {
+    font-size:3rem;
+    color:whitesmoke;
+}
+
+#score {
+    
+}
+
+#who {
+    width: 600px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#points {
+    width:600px;
+    display:flex;
+    justify-content: space-around;
+}
+
+#playground {
+    display: flex;
+    height:300px;
+    width:600px;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+#result {
+    color:cyan;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size:4rem;
+    font-weight: 100;
+}
+
+#Buttons {
+    display: flex;
+    width:650px;
+    height:100px;
+    justify-content: space-between;
+}
+
+#Buttons button {
+    border:none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height:100px;
+}
+
+#Buttons button:hover {
+    cursor:pointer;
+}
+
+#Rock {
+    background: url(https://i.ibb.co/drmCrR3/stone-png-5a35c873934f18-0267847515134741636034-removebg-preview.png);
+    width:170px;
+}
+
+#Paper {
+    background:url(https://upload.wikimedia.org/wikipedia/commons/1/1a/Paper_Scroll_2.svg);
+    width:80px;
+}
+
+#Scissors {
+    background: url(https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3166183/scissors-clipart-md.png);
+    width:60px;
+}

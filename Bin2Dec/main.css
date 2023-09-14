@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+    --blue: #0075ff;
+    --lightBlue: #2977ff;
+    --white: #ffffff;
+    --darkWhite: #b7b5c0;
+}
+
+input {
+    border: none;
+    background:none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    margin:0;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:250px;
+    width:550px;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+#binaryText {
+    color:var(--lightBlue);
+    font-size: 2rem;
+}
+
+#converter {
+    display: flex;
+    justify-content: space-around;
+}
+
+#binaryDiv, #decimalDiv {
+    display:flex;
+    flex-direction: column;
+    margin:10px;
+    width:200;
+    height:80px;
+}
+
+#binaryInput, #decimalOutput {
+    display: flex;
+    flex:1 1 0%;
+    border:1px solid var(--darkWhite);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#actions {
+    width:150px;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}

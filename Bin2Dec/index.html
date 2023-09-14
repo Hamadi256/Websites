@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary to Decimal Converter</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <form id="main_form">
+        <h1 id="binaryText">Binary to Decimal</h1>
+        <div id="converter">
+            <div id="binaryDiv">
+                <p>Binary:</p>
+                <input type="text" pattern="[0, 1]*" title="Allowed Input: 0, 1"  maxlength="8" id="binaryInput" placeholder="1101111" required>
+            </div>
+    
+            <div id="decimalDiv">
+                <p>Decimal:</p>
+                <input type="text" id="decimalOutput" placeholder="111"readonly>
+            </div>
+        </div>
+        <div id="actions">
+            <button id="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </div>   
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>

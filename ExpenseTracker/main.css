@@ -1,0 +1,99 @@
+:root {
+    --darkest: #212129;
+    --darker: #323949;
+    --dark: #3d3e51;
+    --light: #40445a;
+    --lighter: #4c5265;
+    --blue: #009879;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:97vh;
+    background-color:var(--darker);
+}
+
+header {
+    margin-top: 50px;
+    height: 100px;
+    width:700px;
+}
+
+header #form-input {
+    margin:0 auto;
+}
+
+header form div {
+    margin-bottom:40px;
+}
+
+header form div input {
+    margin-right:50px;
+}
+
+header form div label {
+    color:whitesmoke;
+    font-size:200%;
+}
+
+header form #form-submit {
+    color:blue;
+    font-size:200%;
+   
+}
+
+main {
+    margin-top:120px;
+}
+
+main #expense-section {
+    width:700px;
+}
+
+#expense-table {
+    min-width: 400px;
+    border-collapse: collapse;
+    font-size:1rem;
+    font-family: sans-serif;
+}
+
+#expense-table thead th {
+    background-color: var(--blue);
+    color:#ffffff;
+    text-align: left;
+    font-weight:bold;
+}
+
+#expense-table th, #expense-table td {
+    padding:12px 15px;
+}
+
+#expense-table tbody tr {
+    border: 1px solid var(--darkest);
+    color:whitesmoke;
+}
+
+#expense-table tbody tr:nth-of-type(odd)
+{
+    background-color: var(--light);
+}
+
+#expense-table tbody tr:nth-of-type(even) {
+    background-color: var(--dark);
+}
+
+.deleteRow {
+    border:none;
+    outline:none;
+    background:none;
+    color:crimson;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+}

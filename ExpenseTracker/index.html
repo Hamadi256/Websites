@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <form id="form-input" autocomplete="off">
+            <div>
+                <label for="type">Type:</label>
+                <input id="type" placeholder="Payment method">
+
+                <label for="name">Name:</label>
+                <input id="name" placeholder="Purchase location">
+            </div>
+
+            <div>
+                <label for="amount">Amount:</label>
+                <input id="amount" placeholder="Payment amount">
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+            </div>
+           
+            <input type="submit" id="form-submit" value="Submit">
+        </form>
+    </header>
+
+    <main>
+        <section id="expense-section">
+            <table id="expense-table">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+    
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>
+                <!-- If i remove any of it the full thing stops working. Front-end is not forgiving at all. -->
+            </table>
+        </section>
+
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

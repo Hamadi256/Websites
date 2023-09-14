@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato',sans-serif;
+}
+
+:root {
+    --black: #19151a;
+    --violet: #75568b;
+    --white: #ffffff;
+    --dark_violet: #443549;
+    --light_violet: #604d6a;
+    --other_violet: #563260;
+    --red: #c0392b;
+    --yellow: #f1c40f;
+    --blue: #64fcfe;
+    --green: #2ecc71;
+    /* black for body background,    violet for on off circle background,   white for big text background
+    dark violet for light holder background color,  other violet for turned off lights background,  light violet for the small part under
+    the ::before element*/
+}
+
+button, input {
+    background: none;
+    border:none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    justify-self: start;
+    margin-top: 30px;
+    width: 50%;
+    height: 10%;
+}
+
+.circle {
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.circle::before {
+    content: "";
+    background-color: var(--dark_violet);
+    border-bottom-color: var(--light_violet);
+    border: solid var(--light_violet) 1px;
+    width: 10px;
+    height: 15px;
+    top: -14px;
+    position: relative;
+    
+} 
+
+.red {
+    background-color: var(--red);
+    animation: redGlow 1s linear 0s infinite both;
+}
+
+.yellow {
+    background-color: var(--yellow);
+    animation: yellowGlow 1s linear 0.5s infinite both;
+}
+
+.blue {
+    background-color: var(--blue);
+    animation: blueGlow 1s linear 0s infinite both;
+}
+
+.green {
+    background-color: var(--green);
+    animation: greenGlow 1s linear 0.5s infinite both;
+}
+
+@keyframes redGlow {
+    from{opacity: 1; box-shadow: 1px 1px 50px var(--red);}
+    to{opacity: 0.4; box-shadow: 1px 1px 20px var(--red);}
+}
+
+@keyframes blueGlow {
+    from{opacity: 1; box-shadow: 1px 1px 50px var(--blue);}
+    to{opacity: 0.4; box-shadow: 1px 1px 20px var(--blue);}
+}
+
+@keyframes yellowGlow {
+    from{opacity: 1; box-shadow: 1px 1px 50px var(--yellow);}
+    to{opacity: 0.4; box-shadow: 1px 1px 20px var(--yellow);}
+}
+
+@keyframes greenGlow {
+    from{opacity: 1; box-shadow: 1px 1px 50px var(--green);}
+    to{opacity: 0.4; box-shadow: 1px 1px 20px var(--green);}
+}
+
+
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height:30%;
+}
+
+#footer h1 {
+    font-size: 3rem;
+    color:var(--white);
+    text-shadow: 0px 0px 50px var(--white),
+                 0px 0px 100px var(--blue);
+}
+
+
+#inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 50%;
+}
+
+#actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:30%;
+}
+
+#on, #off {
+    border: 2px solid var(--violet);
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    color:var(--white);
+    font-size: 1rem;
+    text-align: center;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+#on:hover, #off:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#speedForm {
+    display: flex;
+    width:50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#speedInputLabel {
+    font-size:1rem;
+    color: var(--white);
+    margin-right:10px;
+}
+
+#speedInput, #speedSubmit {
+    border: 2px solid var(--violet);
+    height:40px;
+    width:60px;
+    text-align: center;
+    color:var(--white);
+    font-weight: 700;
+}
+
+#speedInput {
+    border-radius: 80px 0px 0px 80px;
+}
+
+#speedSubmit {
+    border-radius: 0px 80px 80px 0px;
+    opacity: 1;
+    transition:0.4s;
+}
+
+#speedSubmit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

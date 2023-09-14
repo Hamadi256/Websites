@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    font-family: Didot, serif
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin:5px 5px 20px 5px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+main {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#sectionOne, #sectionTwo {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+}
+
+#sectionTwo {
+    border-left: 2px solid #ccc;
+}
+
+.user:hover {
+    cursor: pointer;
+    background-color: #eeeeee;
+}
+
+#nameList, #informationList {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+
+
+

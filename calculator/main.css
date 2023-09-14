@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    font-family: DejaVu Sans Mono, monospace;
+}
+
+:root {
+    --blue: #65bad0; 
+    --light_blue:#075267;
+    --white:#f5f6f9;
+    --dark_white:#c5c6c8;
+    --grey:#83878d; 
+    --dark-grey:#232429; 
+    --black:#17181b;
+    --dark_black:#1d1c1e;
+    /* blue for body background, light_blue is for solution button, white for head, dark white for head text color
+    grey for body text color, dark grey for actions button, black for 0 - 9 buttons, dark_black used for head text color */
+}
+
+button {
+    background: none;
+    border:none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0;
+    height:100vh;
+    width:100vw;
+    background-color: var(--blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    height:70%;
+}
+
+#head {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+    padding: 15px;
+    height:30%;
+    width:100%;
+    background-color: var(--white);
+}
+
+#head p, h1 {
+    color:var(--dark_black);
+    font-weight: 500;
+    height:fit-content;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+#past-math {
+    text-align: right;
+    letter-spacing: 5px;
+}
+
+#calculator {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+    height: 70%;
+    width:100%;
+}
+
+
+.actions, .inputs {
+    background-color: var(--dark-grey);
+    color:var(--grey);
+    font-size:1.5rem;
+    text-align: center;
+    transition: 0.4s;
+    opacity: 1;
+}
+
+.inputs {
+    background-color: var(--black);
+}
+
+.actions:hover , .inputs:hover {
+    cursor:pointer;
+    opacity: 0.8;
+}
+
+#result {
+    background-color: var(--light_blue);
+}
+

@@ -1,0 +1,161 @@
+:root {
+    --darkest: #152238;
+    --darker: #1c2e4a;
+    --dark: #6D5D6E;
+    --violet: #917FB3;
+    --dark-pink: #E5BEEC;
+    --pink: #D864A9;
+}
+
+* {
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+input, button {
+    border:none;
+    outline: none;
+    background:none;
+}
+
+body {
+    display:flex;
+    height:100vh;
+    flex-direction:column;
+    align-items: center;
+    background-color:var(--darker);
+}
+
+header h1 {
+    margin-bottom:1rem;
+}
+
+header {
+    max-width: 700xp;
+    width:700px;
+    margin:0 auto;
+}
+
+header h1 {
+    color:var(--violet);
+    font-size:3rem;
+    font-weight: 300;
+}
+
+#new-task-form {
+    display:flex;
+}
+
+#new-task-input {
+    flex:1 1 0%;
+    background-color: var(--darkest);
+    font-size:1.25rem;
+    border-radius:30px;
+    padding:1rem;
+    color:whitesmoke;
+}
+
+#new-task-input::placeholder {
+    color:grey;
+}
+
+#new-task-submit {
+    cursor:pointer;
+    font-size:1.25rem;
+    font-weight:700;
+    background-image: -webkit-linear-gradient(right, var(--pink), var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:0.4s;
+}
+
+#new-task-submit:hover {
+    opacity: 0.8;
+}
+
+#new-task-submit:active {
+    opacity:0.6;
+}
+
+#tasks-list {
+    margin-top:2rem;
+    max-width:700px;
+    width:700px;
+}
+
+#tasks-list h1 {
+    color:white;
+    font-size: 2rem;
+}
+
+#tasks {
+    max-width:700px;
+    width:700px;
+}
+
+.task {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom:1rem;
+}
+
+.task .task-input {
+    background-color:var(--darkest);
+    flex: 1 1 0%;
+    border-radius:15px;
+    font-size:1.25rem;
+    padding:0.5rem;
+    transition:0.4;
+}
+
+.task .task-input {
+    color: grey;
+    transition:0.4s;
+}
+
+
+.task .task-input:not([readonly])
+{
+    color:var(--pink)
+}
+
+.task .edit {
+    font-size:1.2rem;
+    font-weight:700;
+    background-image: -webkit-linear-gradient(right, var(--pink), var(--violet));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition:0.4s;
+    cursor:pointer;
+    text-transform:uppercase;
+}
+
+.task .action .edit:hover {
+    opacity:0.8;
+}
+
+.task .action .edit:active {
+    opacity:0;
+}
+
+.task .delete {
+    font-weight:700;
+    font-size: 1.2rem;
+    color:crimson;
+    transition:0.4s;
+    cursor: pointer;
+    text-transform:uppercase;
+}
+
+.task .action .delete:hover {
+    opacity:0.8;
+}
+
+.task .action .delete:active {
+    opacity:0;
+}
+
+.task-identify {
+    
+}
